@@ -1,0 +1,89 @@
+body {
+  background-color: hsl(40, 80%, 80%);
+}
+header {
+  text-align: center;
+  font-size: 1em;
+}
+.survey-page {
+  display: grid;
+  text-align: left;
+  margin: auto;
+  background-color: white;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 15px;
+  margin: 2% auto 2% auto;
+}
+.block {
+  padding: 15px;
+}
+.option-group {
+  font-size: 14px;
+  text-align: left;
+}
+input[type="text"], input[type="email"], input[type="number"], #dropdown, textarea {
+  width: 80%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+}
+.checkbox-block {
+  display: grid;
+  padding: 10px;
+  max-width: 80%;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "question question question"
+    "first second third"
+}
+.no-bullet {
+  list-style-type: none;
+  padding: 0;
+}
+.checkbox-question {
+  grid-area: question;
+}
+.first-set {
+  grid-area: first;
+}
+.second-set {
+  grid-area: second;
+}
+.third-set {
+  grid-area: third;
+}
+#title, #description {
+  font-family: san-serif;
+}
+#survey-form {
+  padding: 10px;
+}
+#name, #email, #number, #dropdown,   {
+  font-size: 1em;
+}
+#name-label, #email-label, #number-label, .survey-question {
+  font-size: 15px;
+  color: hsl(270, 90%, 50%);
+}
+#submit {
+  background-color: hsl(210, 100%, 40%);
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  padding: 1px;
+}
+
+@media (min-width: 600px){
+  #name-label, #email-label, #number-label, .survey-question, #description {
+    font-size: 20px;
+  }
+  .option-group {
+  font-size: 17px;
+}

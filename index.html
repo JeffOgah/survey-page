@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page (FreeCodeCamp)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<main>
+  <div class="survey-page">
+  <header>
+    <h1 id="title">Game of Thrones Finale</h1>
+    <p id="description"><em>Short survey on Game of Thrones show</em></p>
+  </header>
+<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+  <div class="block">
+    <label id="name-label" for="name">*Name:</label></br>
+    <input type="text" id="name" placeholder="E.g Aegon Targaryen" required>
+  </div>
+  <div class="block">
+    <label id="email-label" for="email">*E-mail:</label></br>
+    <input type="email" id="email" placeholder="E.g nightking@gmail.com" required>
+  </div>
+  <div class="block">
+    <label id="number-label" for="number">Age:</label></br>
+    <input type="number" id="number" min="5" max="125" placeholder="E.g 25">
+  </div>
+  <div class="block">
+    <label for="dropdown" class="survey-question">Who will sit on the Iron Throne?</label></br>
+    <select id="dropdown">
+      <option label="Select an option" disabled selected></option>
+      <option label="Jon Snow">Aegon Targaryen/Jon Snow</option>
+      <option label="Daenerys">Daenerys Targaryen </option>
+      <option label="Cersei">Cersei Lannister</option>
+      <option label="Gendry">Gendry Baratheon</option>
+      <option label="Night King">Night King</option>
+      <option label="No one">No one</option>
+      <option label="Other">Other</option>
+    </select>
+  </div>
+  <div class="checkbox-block block">
+  <label for="survivors" class="checkbox-question survey-question">Which characters survive till the end? (Pick as many as you think)</label>
+  <ul class="first-set no-bullet">
+    <li><label class="option-group"><input type="checkbox" value="Jon Snow" name="survivors">Jon Snow</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Daenerys" name="survivors">Daenerys</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Tyrion" name="survivors">Tyrion</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Cersei" name="survivors">Cersei</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Arya" name="survivors">Arya</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Sansa" name="survivors">Sansa</label></li>
+  </ul>
+  <ul class="second-set no-bullet">
+    <li><label class="option-group"><input type="checkbox" value="Bran" name="survivors">Bran</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Jaime" name="survivors">Jaime</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Sam" name="survivors">Samwell</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Brienne" name="survivors">Brienne</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Gendry" name="survivors">Gendry</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Varys" name="survivors">Varys</label></li>
+  </ul>
+  <ul class="third-set no-bullet">
+    <li><label class="option-group"><input type="checkbox" value="Missandei" name="survivors">Missandei</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Theon" name="survivors">Theon</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Euron" name="survivors">Euron</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Bronn" name="survivors">Bronn</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Hound" name="survivors">Hound</label></li>
+    <li><label class="option-group"><input type="checkbox" value="Jorah" name="survivors">Jorah</label></li>
+  </ul>  
+</div>
+  <div class="block">
+    <label for="houses" class="survey-question">What house are you rooting for?</label><br>
+    <label class="option-group"><input type="radio" value="Targaryen" name="houses"><strong>Targaryen</strong> of King's Landing</label></br>
+    <label class="option-group"><input type="radio" value="Stark" name="houses"><strong>Stark</strong> of Winterfell</label></br>
+    <label class="option-group"><input type="radio" value="Lannister" name="houses"><strong>Lannister</strong> of Casterly Rock</label></br>
+    <label class="option-group"><input type="radio" value="Greyjoy" name="houses"><strong>Greyjoy</strong> of Pyke</label></br>
+    <label class="option-group"><input type="radio" value="Baratheon" name="houses"><strong>Baratheon</strong> of Storm's End</label></br>
+    <label class="option-group"><input type="radio" value="None" name="houses"><strong>None</strong></label></br>
+  </div>
+  <div class="block">
+    <label id="comments" for="comments" class="survey-question">Your last words:</label><br>
+    <textarea type="text" id="comments" placeholder="Winter is coming!"></textarea>
+  </div>
+  <button type="Submit" id="submit" class="block">Submitt</buttom>
+</form>
+</div>
+</main>
+  
+  
+
+</body>
+
+</html>
